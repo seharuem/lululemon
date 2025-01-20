@@ -1,0 +1,139 @@
+/* 글씨, 배경 */
+.light, .b {
+	color: black;
+}
+.dark, .w {
+	color: white;
+}
+.light_bg {
+	background-color: black;
+}
+.dark_bg {
+	background-color: white;
+}
+.select.b::after {
+	background-color: black;
+}
+.select.w::after {
+	background-color: white;
+}
+
+/* 컬러칩 */
+
+/* 비주얼 영역 */
+.black {
+	background-color: black;
+	border-color: black;
+}
+.white {
+	background-color: white;
+	border-color: white;
+}
+.silver_drop {
+	background-color: silver;
+	border-color: silver;
+}
+.legacy_green {
+	background-color: #48594e;
+	border-color: #48594e;
+	box-shadow: 0 0 2px white;
+}
+.storm_teal {
+	background-color: #456663;
+	border-color: #456663;
+	box-shadow: 0 0 2px white;
+}
+.bone {
+	background-color: #d7d2ca;
+	border-color: #d7d2ca;
+}
+.army_green {
+	background-color: #7c7769;
+	border-color: #7c7769;
+}
+.garnet {
+	background-color: #7e2c3a;
+	border-color: #7e2c3a;
+	box-shadow: 0 0 2px white;
+}
+.jade_grey {
+	background-color: #c0c2bd;
+	border-color: #c0c2bd;
+}
+.heathered_rose {
+	background-color: #e5dae0;
+	border-color: #e5dae0;
+}
+.heathered_espresso {
+	background-color: #3d2f2c;
+	border-color: #3d2f2c;
+	box-shadow: 0 0 2px white;
+}
+.true_navy {
+	background-color: #3d4454;
+	border-color: #3d4454;
+	box-shadow: 0 0 2px white;
+}
+.oil_grey {
+	background-color: #67717c;
+	border-color: #67717c;
+}
+.fawn_brown {
+	background-color: #9e8d76;
+	border-color: #9e8d76;
+}
+.slate_brown {
+	background-color: #7a7c74;
+	border-color: #7a7c74;
+}
+.medium_forest {
+	background-color: #738482;
+	border-color: #738482;
+}
+
+/* 신제품 영역 */
+.twilight_rose {
+	background-color: rosybrown;
+}
+.filbert_tan {
+	background-color: tan;
+}
+.heathered_crepe {
+	background-color: #ddd4d2;
+}
+.heathered_black {
+	background-color: #515151;
+}
+.heathered_mojave_tan {
+	background-color: #d1c5b3;
+}
+.shale_blue {
+	background-color: #a3a5b3;
+}
+.subtle_tan {
+	background-color: #d7d0c6;
+}
+.black_night {
+	background-color: #35333f;
+}
+
+/* 베스트 */
+.primer {
+	background-color: #ebebeb;
+	box-shadow: 0 0 2px black;
+}
+.pink_tide {
+	background-color: #c5959e;
+}
+.raw_linen {
+	background-color: #d8d6cd;
+}
+.trench {
+	background-color: #c8bba5;
+}
+.obsidian {
+	background-color: #313033;
+}
+.mojave_tan {
+	background-color: #d1cac1;
+}

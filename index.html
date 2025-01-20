@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>lululemon</title>
+
+		<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<link rel="stylesheet" href="/lululemon/css/reset.css" />
+		<link rel="stylesheet" href="/lululemon/css/common.css" />
+		<link rel="stylesheet" href="/lululemon/css/main.css" />
+		<link rel="stylesheet" href="/lululemon/css/color.css" />
+
+		<script src="/lululemon/js/script.js" defer></script>
+	</head>
+	<body>
+		<!-- 바로가기 메뉴 시작 -->
+		<ul class="skipmenu_list">
+			<li><a href="#mainmenu_list" class="hidden">메인 메뉴 바로가기</a></li>
+			<li><a href="#visual" class="hidden">본문 바로가기</a></li>
+			<li><a href="#footer_menu" class="hidden">하단 메뉴 바로가기</a></li>
+		</ul>
+		<!-- 바로가기 메뉴 끝 -->
+
+		<!-- 상단 영역 시작 -->
+		<header class="flex">
+			<div id="header_wrap" class="flex">
+				<section id="brand" class="flex">
+					<h1 id="logo"><a href="/lululemon/index.html">lululemon</a></h1>
+
+					<nav id="main_menu">
+						<h2 class="hidden">메인메뉴</h2>
+
+						<ul id="mainmenu_list" class="flex">
+							<li>
+								<a href="#">여성</a>
+								<ul class="submenu">
+									<li><a href="#">아우터</a></li>
+									<li><a href="#">상의</a></li>
+									<li><a href="#">하의</a></li>
+									<li><a href="#">액세서리</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">남성</a>
+								<ul class="submenu">
+									<li><a href="#">아우터</a></li>
+									<li><a href="#">상의</a></li>
+									<li><a href="#">하의</a></li>
+									<li><a href="#">액세서리</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">액세서리</a>
+								<ul class="submenu">
+									<li><a href="#">가방</a></li>
+									<li><a href="#">모자</a></li>
+									<li><a href="#">장갑</a></li>
+									<li><a href="#">양말</a></li>
+									<li><a href="#">워터보틀</a></li>
+									<li><a href="#">요가용품</a></li>
+								</ul>
+							</li>
+							<li class="hint">
+								<a href="#">기프트 컬렉션</a>
+								<ul class="submenu">
+									<li><a href="#">여성 선물</a></li>
+									<li><a href="#">남성 선물</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">커뮤니티</a>
+								<ul class="submenu">
+									<li><a href="#">앰배서더 소개</a></li>
+									<li><a href="#">브랜드 스토리</a></li>
+									<li><a href="#">소셜 임팩트</a></li>
+									<li><a href="#">채용</a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</section>
+
+				<section id="utility" class="flex">
+					<form id="search" class="flex">
+						<input type="text" name="search" placeholder="디즈니 × 룰루레몬" />
+						<button type="submit"></button>
+					</form>
+
+					<nav id="utility_menu" class="flex">
+						<a href="#" id="account" class="account_menu">내계정</a>
+						<a href="#" id="wish_list" class="account_menu">위시리스트</a>
+						<a href="#" id="cart" class="account_menu">장바구니</a>
+					</nav>
+				</section>
+			</div>
+		</header>
+		<!-- 상단 영역 끝 -->
+
+		<!-- 비주얼 영역 시작 -->
+		<section id="visual" class="flex">
+			<div id="visual_swiper" class="swiper flex">
+				<div id="visual_wrap" class="swiper-wrapper flex">
+					<div id="visual_woman" class="swiper-slide flex">
+						<div class="visual_img"></div>
+
+						<div class="visual_collection flex_column">
+							<div class="visual_text_wrap flex_column">
+								<p class="visual_title">원더 퍼프 컬렉션 Woman</p>
+								<p class="visual_text">안아주는 것 같은 포근함</p>
+							</div>
+
+							<ul class="visual_woman visual_list">
+								<li class="visual_product">
+									<div class="visual_box_wrap">
+										<a href="#" class="visual_box">
+											<img
+												src="/lululemon/images/visual_woman_00_white.webp"
+												alt=""
+											/>
+										</a>
+										<span class="visual_box"></span>
+										<span class="visual_box"></span>
+										<span class="color_name b">White</span>
+									</div>
+									<div class="product_info flex_column">
+										<a href="#" class="product_name">
+											원더 퍼프 600 다운 필 크롭 재킷
+										</a>
+										<div class="product_wrap flex">
+											<a href="#" class="product_price">355,000원</a>
+											<ul class="product_color flex">
+												<li>
+													<button class="white b" type="button">White</button>
+												</li>
+												<li>
+													<button class="silver_drop b" type="button">
+														Silver Drop
+													</button>
+												</li>
+												<li>
+													<button class="legacy_green w" type="button">
+														Legacy Green
+													</button>
+												</li>
+												<li>
+													<button class="storm_teal w" type="button">
+														Black
+													</button>
+												</li>
+												<li>
+													<button class="black w" type="button">
+														Storm Teal
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="visual_product">
+									<div class="visual_box_wrap">
+										<a href="#" class="visual_box">
+											<img
+												src="/lululemon/images/visual_woman_01_bone.webp"
+												alt=""
+											/>
+										</a>
+										<span class="visual_box"></span>
+										<span class="visual_box"></span>
+										<span class="color_name light">Bone</span>
+									</div>
+									<div class="product_info flex_column">
+										<a href="#" class="product_name">
+											원더 퍼프 600 다운 필 크롭 베스트
+										</a>
+										<div class="product_wrap flex">
+											<a href="#" class="product_price">308,000원</a>
+											<ul class="product_color flex">
+												<li>
+													<button class="bone b" type="button">Bone</button>
+												</li>
+												<li>
+													<button class="army_green w" type="button">
+														Army Green/Compass Khaki
+													</button>
+												</li>
+												<li>
+													<button class="garnet w" type="button">
+														Garnet/Deep Luxe
+													</button>
+												</li>
+												<li>
+													<button class="black w" type="button">Black</button>
+												</li>
+												<li>
+													<button class="jade_grey b" type="button">
+														Jade Grey/Palm Court
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="visual_product">
+									<div class="visual_box_wrap">
+										<a href="#" class="visual_box">
+											<img
+												src="/lululemon/images/visual_woman_02_heathered_rose.webp"
+												alt=""
+											/>
+										</a>
+										<span class="visual_box"></span>
+										<span class="color_name light">
+											Heathered Twilight Rose
+										</span>
+									</div>
+									<div class="product_info flex_column">
+										<a href="#" class="product_name">
+											원더 퍼프 600 다운 필 재킷 이리데슨트
+										</a>
+										<div class="product_wrap flex">
+											<a href="#" class="product_price">417,000원</a>
+											<ul class="product_color flex">
+												<li>
+													<button class="heathered_rose b" type="button">
+														Heathered Twilight Rose
+													</button>
+												</li>
+												<li>
+													<button class="heathered_espresso w" type="button">
+														Heathered Espresso
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="visual_product">
+									<div class="visual_box_wrap">
+										<a href="#" class="visual_box">
+											<img
+												src="/lululemon/images/visual_woman_03.webp"
+												alt=""
+											/>
+										</a>
+										<span class="color_name dark">True Navy</span>
+									</div>
+									<div class="product_info flex_column">
+										<a href="#" class="product_name">원더 퍼프 재킷 워드마크</a>
+										<div class="product_wrap flex">
+											<a href="#" class="product_price">308,000원</a>
+											<ul class="product_color flex">
+												<li>
+													<button class="true_navy w" type="button">
+														True Navy
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div id="visual_man" class="swiper-slide flex">
+						<div class="visual_img"></div>
+
+						<div class="visual_collection flex_column">
+							<div class="visual_text_wrap flex_column">
+								<p class="visual_title">원더 퍼프 컬렉션 Man</p>
+								<p class="visual_text">즐겁고 자유로운 바이브</p>
+							</div>
+
+							<ul class="visual_man visual_list">
+								<li class="visual_product">
+									<div class="visual_box_wrap">
+										<a href="#" class="visual_box">
+											<img
+												src="/lululemon/images/visual_man_00_bone.webp"
+												alt=""
+											/>
+										</a>
+										<span class="visual_box"></span>
+										<span class="visual_box"></span>
+										<span class="color_name light">Bone</span>
+									</div>
+									<div class="product_info flex_column">
+										<a href="#" class="product_name">
+											원더 퍼프 600 다운 필 재킷 테크 캔버스
+										</a>
+										<div class="product_wrap flex">
+											<a href="#" class="product_price">464,000원</a>
+											<ul class="product_color flex">
+												<li>
+													<button class="bone b" type="button">Bone</button>
+												</li>
+												<li>
+													<button class="oil_grey w" type="button">
+														Oil Grey
+													</button>
+												</li>
+												<li>
+													<button class="fawn_brown b" type="button">
+														Fawn Brown
+													</button>
+												</li>
+												<li>
+													<button class="black w" type="button">Black</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="visual_product">
+									<div class="visual_box_wrap">
+										<a href="#" class="visual_box">
+											<img
+												src="/lululemon/images/visual_man_01_slate_brown.webp"
+												alt=""
+											/>
+										</a>
+										<span class="visual_box"></span>
+										<span class="visual_box"></span>
+										<span class="color_name dark">Slate Brown</span>
+									</div>
+									<div class="product_info flex_column">
+										<a href="#" class="product_name">
+											원더 퍼프 600 다운 필 베스트 테크 캔버스
+										</a>
+										<div class="product_wrap flex">
+											<a href="#" class="product_price">387,000원</a>
+											<ul class="product_color flex">
+												<li>
+													<button class="slate_brown w" type="button">
+														Slate Brown
+													</button>
+												</li>
+												<li>
+													<button class="oil_grey w" type="button">
+														Oil Grey
+													</button>
+												</li>
+												<li>
+													<button class="fawn_brown b" type="button">
+														Fawn Brown
+													</button>
+												</li>
+												<li>
+													<button class="black w" type="button">Black</button>
+												</li>
+												<li>
+													<button class="true_navy w" type="button">
+														True Navy
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="visual_product">
+									<div class="visual_box_wrap">
+										<a href="#" class="visual_box">
+											<img
+												src="/lululemon/images/visual_man_02_medium_forest.webp"
+												alt=""
+											/>
+										</a>
+										<span class="visual_box"></span>
+										<span class="color_name dark">Medium Forest</span>
+									</div>
+									<div class="product_info flex_column">
+										<a href="#" class="product_name">
+											원더 퍼프 600 다운 필 재킷
+										</a>
+										<div class="product_wrap flex">
+											<a href="#" class="product_price">417,000원</a>
+											<ul class="product_color flex">
+												<li>
+													<button class="medium_forest w" type="button">
+														Medium Forest
+													</button>
+												</li>
+												<li>
+													<button class="black w" type="button">Black</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+								<li class="visual_product">
+									<div class="visual_box_wrap">
+										<a href="#" class="visual_box">
+											<img
+												src="/lululemon/images/visual_man_03_medium_forest.webp"
+												alt=""
+											/>
+										</a>
+										<span class="visual_box"></span>
+										<span class="color_name dark">Medium Forest</span>
+									</div>
+									<div class="product_info flex_column">
+										<a href="#" class="product_name">
+											원더 퍼프 600 다운 필 베스트
+										</a>
+										<div class="product_wrap flex">
+											<a href="#" class="product_price">308,000원</a>
+											<ul class="product_color flex">
+												<li>
+													<button class="medium_forest w" type="button">
+														Medium Forest
+													</button>
+												</li>
+												<li>
+													<button class="black w" type="button">Black</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div id="visual_arrow" class="page_arrow flex">
+					<button class="swiper-button-prev">left</button>
+					<button class="swiper-button-next">right</button>
+				</div>
+
+				<div id="visual_page" class="flex">
+					<div class="swiper-pagination page dark flex"></div>
+				</div>
+			</div>
+		</section>
+		<!-- 비주얼 영역 끝 -->
+
+		<!-- 콘텐츠 영역 시작 -->
+		<section id="contents" class="flex_column">
+			<!-- 신제품 영역 시작 -->
+			<section id="new_product" class="flex">
+				<section id="new_woman" class="newSwiper flex_column">
+					<div class="product_title_wrap flex">
+						<h3>신제품 Woman</h3>
+						<div class="page_wrap flex">
+							<div class="page_arrow flex">
+								<button class="swiper-button-prev light_bg">left</button>
+								<div class="swiper-pagination page light flex"></div>
+								<button class="swiper-button-next light_bg">right</button>
+							</div>
+							<a href="#" class="all">전체보기</a>
+						</div>
+					</div>
+
+					<div class="swiper flex_column">
+						<ul class="new_woman swiper-wrapper product_list">
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img
+										src="/lululemon/images/new_woman_00_twilight_rose.webp"
+										alt=""
+									/>
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">
+										드레이피 Softstreme 오프 더 숄더 롱슬리브 셔츠
+									</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">109,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Twilight Rose</li>
+											<li>
+												<button class="twilight_rose w" type="button">
+													Twilight Rose
+												</button>
+											</li>
+											<li>
+												<button class="black w" type="button">Black</button>
+											</li>
+											<li>
+												<button class="filbert_tan b" type="button">
+													Filbert Tan
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img
+										src="/lululemon/images/new_woman_01_twilight_rose.webp"
+										alt=""
+									/>
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">
+										드레이피 Softstreme 칼럼 미디스커트
+									</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">169,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Twilight Rose</li>
+											<li>
+												<button class="twilight_rose w" type="button">
+													Twilight Rose
+												</button>
+											</li>
+											<li>
+												<button class="black w" type="button">Black</button>
+											</li>
+											<li>
+												<button class="filbert_tan b" type="button">
+													Filbert Tan
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img
+										src="/lululemon/images/new_woman_02_twilight_rose.webp"
+										alt=""
+									/>
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">
+										드레이피 Softstreme 플레어드 팬츠 아시아 핏
+									</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">169,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Twilight Rose</li>
+											<li>
+												<button class="twilight_rose w" type="button">
+													Twilight Rose
+												</button>
+											</li>
+											<li>
+												<button class="black w" type="button">Black</button>
+											</li>
+											<li>
+												<button class="filbert_tan b" type="button">
+													Filbert Tan
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img
+										src="/lululemon/images/new_woman_03_twilight_rose.webp"
+										alt=""
+									/>
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">
+										드레이피 Softstreme 플레어드 팬츠
+									</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">169,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Twilight Rose</li>
+											<li>
+												<button class="twilight_rose w" type="button">
+													Twilight Rose
+												</button>
+											</li>
+											<li>
+												<button class="black w" type="button">Black</button>
+											</li>
+											<li>
+												<button class="filbert_tan b" type="button">
+													Filbert Tan
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/new_woman_04_black.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">
+										Softstreme 신치 웨이스트 풀집 재킷
+									</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">198,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Black</li>
+											<li>
+												<button class="black w" type="button">Black</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/new_woman_05.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">
+										알파카 울 블렌드 크로스해치 스웨터
+									</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">198,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Heathered Crepe</li>
+											<li>
+												<button class="heathered_crepe b" type="button">
+													Heathered Crepe
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/new_woman_06_black.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">캐시미어 슬림 핏 카디건</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">308,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Black</li>
+											<li>
+												<button class="black w" type="button">Black</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/new_woman_07.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">
+										캐시미어 슬림 핏 크루넥 스웨터
+									</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">278,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Subtle Tan</li>
+											<li>
+												<button class="subtle_tan b" type="button">
+													Subtle Tan
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+						<div class="swiper-scrollbar slide_bg"></div>
+					</div>
+				</section>
+				<section id="new_man" class="newSwiper flex_column">
+					<div class="product_title_wrap flex">
+						<h3>신제품 Man</h3>
+						<div class="page_wrap flex">
+							<div class="page_arrow flex">
+								<button class="swiper-button-prev light_bg">left</button>
+								<div class="swiper-pagination page light flex"></div>
+								<button class="swiper-button-next light_bg">right</button>
+							</div>
+							<a href="#" class="all">전체보기</a>
+						</div>
+					</div>
+
+					<div class="swiper flex_column">
+						<ul class="new_man swiper-wrapper product_list">
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/new_man_00_bone.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">
+										헤비웨이트 플리스 풀집 후디
+									</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">230,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Bone</li>
+											<li>
+												<button class="bone b" type="button">Bone</button>
+											</li>
+											<li>
+												<button class="black w" type="button">Black</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/new_man_01_bone.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">헤비웨이트 플리스 크루넥</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">198,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Bone</li>
+											<li>
+												<button class="bone b" type="button">Bone</button>
+											</li>
+											<li>
+												<button class="army_green w" type="button">
+													Army Green
+												</button>
+											</li>
+											<li>
+												<button class="black w" type="button">Black</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/new_man_02_bone.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">헤비웨이트 플리스 조거</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">198,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Bone</li>
+											<li>
+												<button class="bone b" type="button">Bone</button>
+											</li>
+											<li>
+												<button class="army_green w" type="button">
+													Army Green
+												</button>
+											</li>
+											<li>
+												<button class="black w" type="button">Black</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/new_man_03.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">소프트 저지 테이퍼드 팬츠</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">138,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Heathered Mojave Tan</li>
+											<li>
+												<button class="heathered_mojave_tan b" type="button">
+													Heathered Mojave Tan
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/new_man_04.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">페이스 브레이커 재킷 워시</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">246,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Dilute Wash Shale Blue</li>
+											<li>
+												<button class="shale_blue w" type="button">
+													Dilute Wash Shale Blue
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/new_man_05.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">페이스 브레이커 팬츠 워시</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">198,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Dilute Wash Shale Blue</li>
+											<li>
+												<button class="shale_blue w" type="button">
+													Dilute Wash Shale Blue
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/new_man_06.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">
+										페이스 브레이커 라이너리스 쇼츠 7" 워시
+									</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">109,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Dilute Wash Shale Blue</li>
+											<li>
+												<button class="shale_blue w" type="button">
+													Dilute Wash Shale Blue
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+						<div class="swiper-scrollbar slide_bg"></div>
+					</div>
+				</section>
+			</section>
+			<!-- 신제품 영역 끝 -->
+
+			<!-- 베스트 셀러 시작 -->
+			<section id="best_seller" class="flex_column">
+				<h3>BEST SELLER</h3>
+
+				<div id="best_wrap" class="swiper flex_column">
+					<div id="best_menu_wrap" class="flex">
+						<div id="best_tab" class="flex">
+							<button class="active">Woman</button>
+							<button>Man</button>
+						</div>
+						<div class="page_wrap flex">
+							<div class="page_arrow flex">
+								<!-- <button class="swiper-button-prev dark_bg">left</button> -->
+								<div class="swiper-pagination page dark flex"></div>
+								<!-- <button class="swiper-button-next dark_bg">right</button> -->
+							</div>
+							<a href="#" class="all dark">전체보기</a>
+						</div>
+					</div>
+
+					<ul id="best_list" class="best_woman swiper-wrapper flex">
+						<li class="swiper-slide">
+							<a href="#">
+								<img
+									src="/lululemon/images/best_woman_00_legacy_green.webp"
+									alt=""
+								/>
+							</a>
+							<div class="product_info flex_column">
+								<a href="#" class="product_name">
+									원더 퍼프 600 다운 필 크롭 재킷
+								</a>
+								<div class="product_wrap flex">
+									<a href="#" class="product_price">355,000원</a>
+									<ul class="product_color flex">
+										<li class="color_name light">Legacy Green</li>
+										<!-- <li class="white b">White</li> -->
+										<!-- <li class="silver_drop b">Silver Drop</li> -->
+										<li><button class="legacy_green w" type="button">Legacy Green</button></li>
+										<!-- <li class="storm_teal w">Storm Teal</li>
+										<li class="black w">Black</li> -->
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<a href="#">
+								<img src="/lululemon/images/best_woman_01_bone.webp" alt="" />
+							</a>
+							<div class="product_info flex_column">
+								<a href="#" class="product_name">
+									원더 퍼프 600 다운 필 크롭 베스트
+								</a>
+								<div class="product_wrap flex">
+									<a href="#" class="product_price">308,000원</a>
+									<ul class="product_color flex">
+										<li class="color_name light">Bone</li>
+										<li><button class="bone b" type="button">Bone</button></li>
+										<!-- <li class="army_green w">Army Green</li>
+										<li class="garnet w">Garnet/Deep Luxe</li>
+										<li class="black w">Black</li>
+										<li class="jade_grey b">Jade Grey/Palm Court</li> -->
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<a href="#">
+								<img src="/lululemon/images/best_woman_02_bone.webp" alt="" />
+							</a>
+							<div class="product_info flex_column">
+								<a href="#" class="product_name">
+									Softstreme 하이라이즈 팬츠 아시아 핏
+								</a>
+								<div class="product_wrap flex">
+									<a href="#" class="product_price">184,000원</a>
+									<ul class="product_color flex">
+										<li class="color_name light">Bone</li>
+										<li><button class="bone b" type="button">Bone</button></li>
+										<!-- <li class="black w">Black</li> -->
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<a href="#">
+								<img
+									src="/lululemon/images/best_woman_03_true_navy.webp"
+									alt=""
+								/>
+							</a>
+							<div class="product_info flex_column">
+								<a href="#" class="product_name">
+									스로우백 스틸 팬츠 아시아 핏
+								</a>
+								<div class="product_wrap flex">
+									<a href="#" class="product_price">169,000원</a>
+									<ul class="product_color flex">
+										<li class="color_name light">True Navy</li>
+										<li><button class="true_navy w" type="button">True Navy</button></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<a href="#">
+								<img
+									src="/lululemon/images/best_woman_04_filbert_tan.webp"
+									alt=""
+								/>
+							</a>
+							<div class="product_info flex_column">
+								<a href="#" class="product_name">스쿠바 오버사이즈드 풀오버</a>
+								<div class="product_wrap flex">
+									<a href="#" class="product_price">138,000원</a>
+									<ul class="product_color flex">
+										<li class="color_name light">Filbert Tan</li>
+										<li><button class="filbert_tan b" type="button">Filbert Tan</button></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<a href="#">
+								<img src="/lululemon/images/best_woman_05_primer.webp" alt="" />
+							</a>
+							<div class="product_info flex_column">
+								<a href="#" class="product_name">저지 트레이닝 숏슬리브 셔츠</a>
+								<div class="product_wrap flex">
+									<a href="#" class="product_price">78,000원</a>
+									<ul class="product_color flex">
+										<li class="color_name light">Primer</li>
+										<li><button class="primer b" type="button">Primer</button></li>
+										<!-- <li class="black w">Black</li>
+										<li class="pink_tide b">Pink Tide</li> -->
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<a href="#">
+								<img src="/lululemon/images/best_woman_06_black.webp" alt="" />
+							</a>
+							<div class="product_info flex_column">
+								<a href="#" class="product_name">
+									다운 앤 어라운드 700 다운 필 재킷
+								</a>
+								<div class="product_wrap flex">
+									<a href="#" class="product_price">278,000원</a>
+									<ul class="product_color flex">
+										<li class="color_name light">Black</li>
+										<li><button class="black w" type="button">Black</button></li>
+										<!-- <li class="raw_linen b">Raw Linen</li> -->
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<!-- 베스트 셀러 끝 -->
+
+			<!-- 콜라보 시작 -->
+			<section id="collab" class="flex_column">
+				<div id="collab_title" class="flex_column">
+					<h3>Disney × lululemon</h3>
+					<p>
+						모든 순간을 행복하게 만들어줄 디즈니 콜라보를 지금 확인해 보세요.
+					</p>
+				</div>
+				<ul id="collab_list" class="flex">
+					<li>
+						<a href="#">
+							<div class="collab_img"></div>
+						</a>
+						<a href="#" class="collab_textbox flex_column">
+							<p class="collab_item">여성 디즈니 컬렉션</p>
+							<p class="collab_text">
+								스케치북 드로잉부터 미니멀한 그래픽까지 미키의 사랑스러움을 담은
+								아이템을 만나보세요.
+							</p>
+							<p class="more">자세히 보기</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="collab_img"></div>
+						</a>
+						<a href="#" class="collab_textbox flex_column">
+							<p class="collab_item">남성 디즈니 컬렉션</p>
+							<p class="collab_text">
+								일상의 움직임에 디즈니 특유의 환상과 즐거움을 더해줄 리미티드
+								에디션 컬렉션이에요.
+							</p>
+							<p class="more">자세히 보기</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<div class="collab_img"></div>
+						</a>
+						<a href="#" class="collab_textbox flex_column">
+							<p class="collab_item">디즈니 액세서리</p>
+							<p class="collab_text">
+								폭신한 모자와 편리한 벨트백과 함께 가뿐하게 모험을 떠나보세요.
+							</p>
+							<p class="more">자세히 보기</p>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!-- 콜라보 끝 -->
+
+			<!-- 기프트 시작 -->
+			<section id="gift" class="flex">
+				<section id="gift_woman" class="giftSwiper flex_column">
+					<div id="gift_woman_img" class="gift_img"></div>
+
+					<div class="product_title_wrap flex">
+						<h3>Gift Guide : 그녀를 위한 선물</h3>
+						<div class="page_wrap flex">
+							<div class="page_arrow flex">
+								<button class="swiper-button-prev light_bg">left</button>
+								<div class="swiper-pagination page light flex"></div>
+								<button class="swiper-button-next light_bg">right</button>
+							</div>
+							<a href="#" class="all">전체보기</a>
+						</div>
+					</div>
+
+					<div class="swiper flex_column">
+						<ul class="gift_woman swiper-wrapper product_list">
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/gift_woman_00.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">
+										퀄티드 그리드 토트백 12L 플러시 플리스
+									</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">215,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Bone</li>
+											<li><button class="bone b" type="button">Bone</button></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/gift_woman_01.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">투톤 캔버스 토트백 10L</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">169,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Mojave Tan</li>
+											<li><button class="mojave_tan b" type="button">Mojave Tan</button></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/gift_woman_02.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">플러시 플리스 버킷 햇</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">83,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Bone</li>
+											<li><button class="bone b" type="button">Bone</button></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/gift_woman_03_bone.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">
+										어드저스터블 미니 숄더백 3L
+									</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">109,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Bone</li>
+											<li><button class="bone b" type="button">Bone</button></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+						<div class="swiper-scrollbar slide_bg"></div>
+					</div>
+				</section>
+				<section id="gift_man" class="giftSwiper flex_column">
+					<div id="gift_man_img" class="gift_img"></div>
+
+					<div class="product_title_wrap flex">
+						<h3>Gift Guide : 그를 위한 선물</h3>
+						<div class="page_wrap flex">
+							<div class="page_arrow flex">
+								<button class="swiper-button-prev light_bg">left</button>
+								<div class="swiper-pagination page light flex"></div>
+								<button class="swiper-button-next light_bg">right</button>
+							</div>
+							<a href="#" class="all">전체보기</a>
+						</div>
+					</div>
+
+					<div class="swiper flex_column">
+						<ul class="gift_man swiper-wrapper product_list">
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/gift_man_00.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">
+										멀티 포켓 크로스바디 백 2.5L
+									</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">93,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Raw Linen</li>
+											<li><button class="raw_linen b" type="button">Raw Linen</button></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/gift_man_01.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">패스트 트랙 백 2.0 10L</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">109,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Bone</li>
+											<li><button class="bone b" type="button">Bone</button></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/gift_man_02.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">
+										웜 레벨레이션 비니 워드마크
+									</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">67,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Pink Tide</li>
+											<li><button class="pink_tide w" type="button">Pink Tide</button></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="swiper-slide flex_column">
+								<a href="#" class="product_img">
+									<img src="/lululemon/images/gift_man_03.webp" alt="" />
+								</a>
+								<div class="product_info flex_column">
+									<a href="#" class="product_name">
+										백 투 라이프 스포츠 보틀 24oz
+									</a>
+									<div class="product_wrap flex">
+										<a href="#" class="product_price">61,000원</a>
+										<ul class="product_color flex">
+											<li class="color_name light">Black</li>
+											<li><button class="black w" type="button">Black</button></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+						<div class="swiper-scrollbar slide_bg"></div>
+					</div>
+				</section>
+			</section>
+			<!-- 기프트 끝 -->
+
+			<!-- 액티비티 시작 -->
+			<section id="activity" class="flex_column">
+				<h3>Activity</h3>
+				<ul id="activity_list" class="flex">
+					<li class="activity_card">
+						<div class="activity_img">
+							<h4>데일리웨어</h4>
+						</div>
+						<div class="activity_box flex_column">
+							<p>세련된 스타일, 기분 좋은 움직임</p>
+							<div class="activity_link flex">
+								<a href="#">Woman</a>
+								<a href="#">Man</a>
+							</div>
+						</div>
+					</li>
+					<li class="activity_card">
+						<div class="activity_img">
+							<h4>요가 & 필라테스</h4>
+						</div>
+						<div class="activity_box flex_column">
+							<p>감각을 깨우는 레깅스</p>
+							<div class="activity_link flex">
+								<a href="#">Woman</a>
+								<a href="#">Man</a>
+							</div>
+						</div>
+					</li>
+					<li class="activity_card">
+						<div class="activity_img">
+							<h4>트레이닝</h4>
+						</div>
+						<div class="activity_box flex_column">
+							<p>우리를 가로막는 사이클에서 벗어나기</p>
+							<div class="activity_link flex">
+								<a href="#">Woman</a>
+								<a href="#">Man</a>
+							</div>
+						</div>
+					</li>
+					<li class="activity_card">
+						<div class="activity_img">
+							<h4>러닝</h4>
+						</div>
+						<div class="activity_box flex_column">
+							<p>움직임이 자유로워야 편해질 수 있어요.</p>
+							<div class="activity_link flex">
+								<a href="#">Woman</a>
+								<a href="#">Man</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<!-- 액티비티 끝 -->
+
+			<section id="banner" class="flex_column">
+				<section id="banner_guide" class="banner_wrap">
+					<div class="banner_img"></div>
+					<a href="#" class="banner_box flex_column">
+						<p class="banner_title">아시아핏 레깅스 가이드</p>
+						<p class="banner_subtitle">나에게 꼭 맞는 스타일을 찾아보세요.</p>
+						<div class="banner_text_wrap flex">
+							<p class="banner_text">
+								모든 움직임에 편안함을 선사하는 레깅스를 만나보세요.
+								<br />
+								아시아핏은 인심 길이가 짧고 허리 밴드가 좁으며, 무릎과 종아리에
+								더 잘 맞습니다.
+							</p>
+							<p class="more">자세히 보기</p>
+						</div>
+					</a>
+				</section>
+				<section id="banner_news" class="banner_wrap flex">
+					<a href="#" class="banner_box flex_column">
+						<p class="banner_title">lululemon 뉴스레터</p>
+						<p class="banner_subtitle">룰루레몬 뉴스레터 구독 신청</p>
+						<div class="banner_text_wrap flex">
+							<p class="banner_text">
+								룰루레몬 신제품, 스웻라이프 컨텐츠 및 이벤트 소식을 제일 먼저
+								받아보세요.
+								<br />
+								구독은 언제든지 취소 할 수 있어요.
+							</p>
+							<p class="more">구독 신청</p>
+						</div>
+					</a>
+					<div class="banner_img"></div>
+				</section>
+			</section>
+		</section>
+		<!-- 콘텐츠 영역 끝 -->
+
+		<!-- 푸터 시작 -->
+		<footer class="flex">
+			<div id="footer_wrap">
+				<div id="footer_info" class="flex_column">
+					<ul id="info_list">
+						<li>
+							<p class="info_title">룰루레몬애틀라티카코리아</p>
+							<p class="info_text">유한회사</p>
+						</li>
+						<li>
+							<p class="info_title">대표</p>
+							<p class="info_text">가레스다니엘제임스포프</p>
+						</li>
+						<li>
+							<p class="info_title">주소</p>
+							<p class="info_text">서울시 강남구 선릉로 835, 3층 (신사동)</p>
+						</li>
+						<li>
+							<p class="info_title">사업자 등록번호</p>
+							<p class="info_text">220-88-88573</p>
+						</li>
+						<li>
+							<p class="info_title">통신판매업신고번호</p>
+							<p class="info_text">2018-서울강남-01176</p>
+						</li>
+						<li>
+							<p class="info_title">호스팅 서비스 사업자</p>
+							<p class="info_text">Salesforce.com inc.</p>
+						</li>
+					</ul>
+					<p id="copyright">
+						© lululemon athletica Korea ltd. All rights reserved
+					</p>
+				</div>
+				<div id="footer_contact" class="flex_column">
+					<p class="info_title">문의하기</p>
+					<ul id="contact_list" class="flex">
+						<li>
+							<p class="info_title">이메일</p>
+							<p class="info_text">gec.kr@lululemon.com</p>
+						</li>
+						<li>
+							<p class="info_title">전화</p>
+							<p class="info_text">070 - 4769 - 7965</p>
+						</li>
+						<li>
+							<p class="info_title">운영시간</p>
+							<p class="info_text">
+								평일 9:00 AM - 6:00 PM (점심 12:00 PM - 1:00 PM)
+							</p>
+						</li>
+					</ul>
+				</div>
+				<div id="footer_sns" class="flex_column">
+					<p class="info_title">SNS</p>
+					<ul id="sns_list" class="flex">
+						<li><a href="#">KakaoTalk</a></li>
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">Facebook</a></li>
+					</ul>
+				</div>
+				<ul id="footer_menu" class="flex_column">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보 처리방침</a></li>
+				</ul>
+			</div>
+		</footer>
+		<!-- 푸터 끝 -->
+	</body>
+</html>

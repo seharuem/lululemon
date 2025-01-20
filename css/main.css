@@ -1,0 +1,485 @@
+/* 비주얼 영역 시작 */
+#visual {
+	background-color: #2f726a;
+	height: 100vh;
+	justify-content: center;
+	align-items: end;
+	position: relative;
+}
+#visual a {
+	color: white;
+}
+#visual_swiper {
+	position: static;
+	width: 1416px;
+	height: calc(100% - 80px);
+	color: white;
+	background-color: #722f37;
+}
+#visual_wrap > div {
+	padding: 60px;
+	box-sizing: border-box;
+}
+.visual_img {
+	width: 60%;
+	background: center / cover no-repeat;
+}
+#visual_woman .visual_img {
+	background-image: url(/lululemon/images/visual1.png);
+}
+#visual_man .visual_img {
+	background-image: url(/lululemon/images/visual2.png);
+}
+.visual_collection {
+	width: 50%;
+	height: 100%;
+	gap: 40px;
+	z-index: 7;
+}
+.visual_text_wrap {
+	gap: 12px;
+}
+.visual_title {
+	font: 500 40px Pretendard;
+}
+.visual_text {
+	font: 300 20px Pretendard;
+}
+.visual_list {
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 40px;
+	row-gap: 20px;
+}
+.visual_product {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+.visual_box_wrap {
+	height: 250px;
+	position: relative;
+}
+.visual_box {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-origin: left bottom;
+	border-style: solid;
+	border-width: 32px 8px 16px;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+.visual_box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center 60%;
+}
+.visual_box:nth-child(1) {
+	z-index: 3;
+}
+.visual_box:nth-child(2) {
+	transform: rotate(-3deg) translate(6px);
+	z-index: 2;
+}
+.visual_box:nth-child(3) {
+	transform: rotate(-6deg) translate(12px);
+	z-index: 1;
+}
+.visual_box_wrap .color_name {
+	position: absolute;
+	z-index: 4;
+	text-indent: 12px;
+	line-height: 32px;
+}
+#visual_arrow {
+	width: 1600px;
+	height: 60px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+#visual_arrow button {
+	width: 60px;
+	height: 100%;
+	cursor: pointer;
+	background-color: white;
+}
+#visual_page {
+	position: absolute;
+	left: 0;
+	bottom: 40px;
+	width: 100%;
+	justify-content: center;
+}
+/* 비주얼 영역 끝 */
+
+/* 콘텐츠 영역 시작 */
+#contents {
+	width: 100%;
+	padding: 100px 0;
+	gap: 100px;
+	justify-content: center;
+	align-items: center;
+}
+
+/* 신제품 시작 */
+#new_product {
+	width: 1416px;
+	gap: 40px;
+	padding: 0 16px;
+}
+#new_woman,
+#new_man {
+	width: 50%;
+	gap: 12px;
+	overflow: hidden;
+}
+.newSwiper .swiper {
+	gap: 20px;
+}
+#new_product .swiper-slide {
+	height: 100%;
+}
+/* 신제품 끝 */
+
+/* 베스트 셀러 시작 */
+#best_seller {
+	width: 100%;
+	gap: 20px;
+	align-items: center;
+	padding: 80px 0;
+	background-color: black;
+	color: white;
+}
+#best_wrap {
+	width: 1416px;
+	align-items: center;
+	gap: 20px;
+	padding: 0 16px;
+}
+#best_seller h3 {
+	font: 500 32px Pretendard;
+}
+#best_menu_wrap {
+	width: 100%;
+	justify-content: space-between;
+}
+#best_tab {
+	position: relative;
+	font: 20px Pretendard;
+	gap: 20px;
+}
+#best_tab button {
+	opacity: 0.4;
+	cursor: pointer;
+}
+#best_tab > button.active {
+	opacity: 1;
+}
+#best_list {
+	width: 100%;
+}
+#best_list > li {
+	width: 440px;
+	height: 680px;
+	background-color: white;
+	clip-path: inset(0 0 80px 0);
+	transition: ease-out;
+}
+#best_list .swiper-slide-active {
+	clip-path: inset(0 0 0 0);
+}
+#best_list > li > a {
+	display: block;
+	height: 600px;
+}
+#best_list > li > a > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	cursor: grab;
+}
+#best_list > li > .product_info {
+	height: 80px;
+	padding: 0 16px;
+	gap: 10px;
+	color: black;
+}
+/* 베스트 셀러 끝 */
+
+/* 콜라보 시작 */
+#collab {
+	width: 1416px;
+	padding: 0 16px;
+	gap: 40px;
+}
+#collab_title {
+	gap: 12px;
+}
+#collab h3 {
+	font: 500 24px Pretendard;
+}
+#collab_title p {
+	font: 16px Pretendard;
+}
+#collab_list {
+	gap: 20px;
+}
+#collab_list > li {
+	width: 100%;
+	position: relative;
+}
+#collab_list > li a:first-child {
+	display: block;
+	clip-path: polygon(
+		15% 0,
+		85% 0,
+		100% 10%,
+		100% 32%,
+		72% 100%,
+		28% 100%,
+		0% 34%,
+		0 10%
+	);
+}
+.collab_img {
+	background: center no-repeat;
+	mask: url(/lululemon/images/disney.svg) center / contain no-repeat;
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+}
+.collab_img::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: url(/lululemon/images/disney_shadow.svg) center / contain
+		no-repeat;
+}
+#collab_list li:nth-child(1) .collab_img {
+	background-image: url(/lululemon/images/disney_woman.jpg);
+	background-size: 200%;
+	background-position: 20% 0;
+}
+#collab_list li:nth-child(2) .collab_img {
+	background-image: url(/lululemon/images/disney_man.webp);
+	background-size: 200%;
+	background-position: 36% 22.5%;
+}
+#collab_list li:nth-child(3) .collab_img {
+	background-image: url(/lululemon/images/disney_3.webp);
+	background-size: 140%;
+	background-position: 50% 90%;
+}
+.collab_textbox {
+	width: 80%;
+	padding: 20px 32px;
+	box-sizing: border-box;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	margin-top: -40px;
+	gap: 28px;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+.collab_item {
+	font: 500 20px Pretendard;
+}
+.collab_text {
+	font: 300 16px / 1.6em Pretendard;
+	word-break: keep-all;
+}
+.more {
+	font: 400 16px / 1.6em Pretendard;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.more::after {
+	content: '';
+	width: 12px;
+	height: 12px;
+	background: url(/lululemon/images/more_icon.svg) center top / contain repeat-y;
+}
+#collab_list li:hover .more::after {
+	animation: more 0.3s ease-out;
+}
+@keyframes more {
+	from {
+		background-position-y: 24px;
+	}
+}
+/* 콜라보 끝 */
+
+/* 기프트 시작 */
+#gift {
+	width: 1416px;
+	padding: 0 16px;
+	gap: 20px;
+}
+#gift_woman,
+#gift_man {
+	width: 50%;
+	gap: 20px;
+	overflow: hidden;
+}
+.gift_img {
+	width: 100%;
+	height: 400px;
+	background: center / cover;
+}
+#gift_woman_img {
+	background-image: url(/lululemon/images/gift_woman.webp);
+}
+#gift_man_img {
+	background-image: url(/lululemon/images/gift_man.jpg);
+}
+#gift .swiper {
+	gap: 20px;
+}
+#gift .product_img img {
+	object-position: 0 60%;
+}
+#gift_woman li:nth-child(4) img {
+	object-position: bottom;
+}
+/* 기프트 끝 */
+
+/* 액티비티 시작 */
+#activity {
+	width: 1416px;
+	gap: 20px;
+}
+#activity h3 {
+	font: 500 24px Pretendard;
+}
+#activity_list {
+	gap: 12px;
+}
+.activity_card {
+	width: 100%;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.activity_img {
+	height: 400px;
+	position: relative;
+}
+.activity_img h4 {
+	font: 500 16px Pretendard;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	padding: 8px 40px;
+	border-top-right-radius: 12px;
+}
+.activity_card:nth-child(1) .activity_img {
+	background: url(/lululemon/images/activity_00.jpg) center / cover;
+}
+.activity_card:nth-child(2) .activity_img {
+	background: url(/lululemon/images/activity_01.jpg) center / cover;
+}
+.activity_card:nth-child(3) .activity_img {
+	background: url(/lululemon/images/activity_02.jpg) center / cover;
+}
+.activity_card:nth-child(4) .activity_img {
+	background: url(/lululemon/images/activity_03.jpg) center / cover;
+}
+.activity_box {
+	gap: 20px;
+	align-items: center;
+	padding: 28px 0;
+}
+.activity_box p {
+	font: 300 20px Pretendard;
+}
+.activity_link {
+	width: 100%;
+	gap: 8px;
+	justify-content: center;
+	align-items: center;
+	font: 20px Pretendard;
+}
+.activity_link a {
+	width: 40%;
+	text-align: center;
+}
+.activity_link a:last-child {
+	order: 3;
+}
+.activity_link::before {
+	content: '';
+	width: 1px;
+	height: 20px;
+	background-color: black;
+	order: 2;
+}
+/* 액티비티 끝 */
+
+/* 배너 시작 */
+#banner {
+	width: 1416px;
+	gap: 120px;
+}
+.banner_wrap {
+	width: 100%;
+	position: relative;
+}
+#banner_news {
+	justify-content: end;
+}
+.banner_img {
+	width: 50%;
+	height: 360px;
+}
+#banner_guide .banner_img {
+	background: url(/lululemon/images/banner_guide.jpg) bottom / cover;
+}
+#banner_news .banner_img {
+	background: url(/lululemon/images/banner_news.jpg) top / cover;
+}
+.banner_box {
+	width: 50%;
+	padding: 36px;
+	background-color: white;
+	gap: 24px;
+	position: absolute;
+	z-index: 1;
+}
+#banner_guide .banner_box {
+	top: 50%;
+	right: 0;
+	border-bottom-right-radius: 20px;
+}
+#banner_news .banner_box {
+	left: 0;
+	margin-top: -40px;
+	border-bottom-left-radius: 20px;
+}
+.banner_img,
+.banner_box {
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.banner_title {
+	font: 500 24px Pretendard;
+}
+.banner_subtitle {
+	font: 400 20px Pretendard;
+}
+.banner_text_wrap {
+	justify-content: space-between;
+	align-items: end;
+}
+.banner_text {
+	font: 300 16px / 1.6em Pretendard;
+}
+/* 배너 끝 */

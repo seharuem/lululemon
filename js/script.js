@@ -18,13 +18,54 @@ function mainMenu() {
 	const menuLength = subMenu.length - 1;
 	const lastMenu = subMenu[menuLength].lastElementChild;
 	let isShow = false;
+	let isMove = false;
+	let activeMenu;
 
 	gsap.set(subMenu, { display: 'none' });
 
 	mainMenu.forEach((menu) => {
 		menu.addEventListener('mouseenter', showMenu);
-		menu.addEventListener('focus', showMenu);
+
+		menu.parentElement.addEventListener('mouseenter', () => {
+			if (!isMove) {
+				menuBorder(menu);
+			}
+		});
+
+		menu.addEventListener('focus', () => {
+			showMenu();
+			menuBorder(menu);
+		});
 	});
+
+	function menuBorder(menu) {
+		if (activeMenu) {
+			activeMenu.classList.remove('active');
+		}
+		activeMenu = menu.parentElement;
+		activeMenu.classList.add('active');
+	}
+
+	subMenu.forEach((sub) => {
+		const subLink = sub.querySelectorAll('a');
+
+		subFocus(subLink);
+	});
+
+	function subFocus(subLink) {
+		subLink.forEach((link, index, array) => {
+			const focusMain = link.closest('.menu-wrap');
+			const last = array.length - 1;
+
+			link.addEventListener('focus', () => {
+				focusMain.classList.add('active');
+			});
+
+			subLink[last].addEventListener('focusout', () => {
+				focusMain.classList.remove('active');
+			});
+		});
+	}
 
 	header.addEventListener('mouseleave', hideMenu);
 
@@ -34,23 +75,27 @@ function mainMenu() {
 		if (!isShow) {
 			isShow = true;
 
-			gsap.to(header, { height: 360 });
+			gsap.to(header, { clipPath: 'inset(0 0 0px 0)' });
 
 			gsap.set(subMenu, { display: '' });
-
-			gsap.from(subMenu, { clipPath: 'inset(0 0 100% 0)' });
 		}
 	}
+
 	function hideMenu() {
 		if (isShow) {
+			isMove = true;
+
 			gsap.to(header, {
-				height: 80,
+				clipPath: 'inset(0 0 280px 0)',
 				onComplete: () => {
+					isMove = false;
 					isShow = false;
+					header.style.zIndex = '';
+					gsap.set(subMenu, { display: 'none' });
 				}
 			});
 
-			gsap.set(subMenu, { display: 'none' });
+			activeMenu.classList.remove('active');
 		}
 	}
 }

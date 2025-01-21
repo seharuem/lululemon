@@ -50,10 +50,11 @@ button {
 /* 헤더 시작 */
 header {
 	width: 100%;
-	height: 80px;
+	height: 360px;
 	position: fixed;
-	justify-content: center;
 	z-index: 999;
+	top: 0;
+	justify-content: center;
 	background: linear-gradient(
 		to bottom,
 		white 0%,
@@ -62,6 +63,7 @@ header {
 		rgba(255, 255, 255, 0.9) 100%
 	);
 	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+	clip-path: inset(0 0 280px 0);
 }
 #header_wrap {
 	width: 1416px;
@@ -93,18 +95,18 @@ header {
 #mainmenu_list > li::after {
 	content: '';
 	position: absolute;
-	bottom: 0;
+	top: 76px;
 	width: 100%;
 	height: 4px;
 	background-color: brown;
 	transform: scaleX(0);
 	transform-origin: left;
-	transition: 0.2s ease-out;
+	transition: transform 0.2s ease-out;
 }
-#mainmenu_list > li:hover::after {
+#mainmenu_list > li.active::after {
 	transform: scale(1);
 }
-#mainmenu_list > li.select > a {
+#mainmenu_list > li.active > a {
 	opacity: 0.5;
 }
 #mainmenu_list > li > a {
@@ -119,7 +121,6 @@ header {
 	width: 100%;
 	height: auto;
 	position: absolute;
-	z-index: 2;
 	top: 80px;
 	left: 0;
 	display: flex;

@@ -1,7 +1,7 @@
 /* 비주얼 영역 시작 */
 #visual {
 	background-color: #2f726a;
-	height: calc(100vh - 80px);
+	height: 1000px;
 	justify-content: center;
 	align-items: end;
 	position: relative;
@@ -24,7 +24,7 @@
 }
 .visual_img {
 	width: 60%;
-	background: center / cover no-repeat;
+	background: center / contain no-repeat;
 }
 #visual_woman .visual_img {
 	background-image: url(/lululemon/images/visual1.png);

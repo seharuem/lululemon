@@ -53,6 +53,7 @@ button {
 /* 헤더 시작 */
 header {
 	width: 100%;
+	min-width: 1720px;
 	height: 360px;
 	position: fixed;
 	z-index: 999;

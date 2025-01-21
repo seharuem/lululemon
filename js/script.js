@@ -21,8 +21,6 @@ function mainMenu() {
 	let isMove = false;
 	let activeMenu;
 
-	gsap.set(subMenu, { display: 'none' });
-
 	mainMenu.forEach((menu) => {
 		menu.addEventListener('mouseenter', showMenu);
 
@@ -76,8 +74,6 @@ function mainMenu() {
 			isShow = true;
 
 			gsap.to(header, { clipPath: 'inset(0 0 0px 0)' });
-
-			gsap.set(subMenu, { display: '' });
 		}
 	}
 
@@ -91,7 +87,6 @@ function mainMenu() {
 					isMove = false;
 					isShow = false;
 					header.style.zIndex = '';
-					gsap.set(subMenu, { display: 'none' });
 				}
 			});
 

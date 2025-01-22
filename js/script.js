@@ -21,6 +21,10 @@ function mainMenu() {
 	let isMove = false;
 	let activeMenu;
 
+	setInterval(() => {
+		// console.log(isShow)
+	}, 1000);
+
 	mainMenu.forEach((menu) => {
 		menu.addEventListener('mouseenter', showMenu);
 
@@ -78,7 +82,7 @@ function mainMenu() {
 	}
 
 	function hideMenu() {
-		if (isShow) {
+		if (isShow && !isMove) {
 			isMove = true;
 
 			gsap.to(header, {
